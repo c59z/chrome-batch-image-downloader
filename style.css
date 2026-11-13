@@ -1,0 +1,18 @@
+:root { color-scheme:light dark; font:16px/1.55 "Microsoft YaHei",sans-serif; }
+body { margin:0; background:Canvas; color:CanvasText; }
+main { max-width:760px; margin:8vh auto; padding:0 24px; }
+h1 { font-size:1.8rem; margin-bottom:.25rem; }
+#source,#destination { opacity:.72; overflow-wrap:anywhere; }
+details { margin:1.6rem 0; }
+summary { cursor:pointer; }
+label { display:block; margin:.8rem 0 .25rem; }
+.controls { display:flex; flex-wrap:wrap; gap:.5rem; }
+input,button { font:inherit; border-radius:6px; padding:.45rem .8rem; border:1px solid GrayText; }
+#subfolder { box-sizing:border-box; width:min(100%,28rem); margin-bottom:.8rem; }
+#selector { flex:1; min-width:14rem; }
+button:enabled { cursor:pointer; }
+#save:enabled { background:#185a9d; color:white; border-color:#185a9d; }
+#coverOption { margin:.6rem 0; }
+ol { padding-left:2.4rem; }
+li { padding:.5rem 0; border-bottom:1px solid color-mix(in srgb, CanvasText 18%, transparent); overflow-wrap:anywhere; }
+li small { display:block; opacity:.8; }

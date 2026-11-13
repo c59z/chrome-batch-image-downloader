@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Batch Image Downloader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Batch Image Downloader</h1>
+      <p id="source"></p>
+      <details id="rules">
+        <summary>Customize image list</summary>
+        <form id="ruleForm">
+          <label for="selector">List CSS selector</label>
+          <div class="controls">
+            <input
+              id="selector"
+              placeholder="Leave blank for Files, or enter ul.gallery li"
+            /><button>Scan again</button>
+          </div>
+        </form>
+      </details>
+      <p id="status" role="status" aria-live="polite">Reading page…</p>
+      <div id="coverOption" hidden>
+        <label
+          ><input type="checkbox" id="cover" /> Include cover
+          <span id="coverName"></span
+        ></label>
+      </div>
+      <label for="subfolder">Folder name</label>
+      <input
+        id="subfolder"
+        required
+        maxlength="255"
+        placeholder="e.g. Gallery"
+        aria-describedby="destination"
+      />
+      <div class="controls">
+        <button id="folder" disabled>Choose parent folder</button
+        ><button id="save" disabled>Download</button>
+      </div>
+      <p id="destination"></p>
+      <ol id="list"></ol>
+    </main>
+    <script type="module" src="download.js"></script>
+  </body>
+</html>
