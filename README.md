@@ -2,6 +2,12 @@
 
 A Chrome extension that saves original images from a page in list order.
 
+# Preview
+
+![](https://i.imgs.ovh/2026/11/13/1535779a9187224b782982b18bdd5b73.jpg)
+
+# How to use?
+
 1. Open `chrome://extensions/`, enable **Developer mode**, click **Load unpacked**, and select the extension folder.
 2. For a local HTML file, open the extension's **Details** and enable **Allow access to file URLs**.
 3. Open the source page and click **Batch Image Downloader** in the extensions menu. Click any filename to inspect its original link.
